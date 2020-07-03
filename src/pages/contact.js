@@ -53,7 +53,7 @@ const ContactPage = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formState }),
     })
-      .then(() => {})
+      .then(() => alert("Success!"))
       .catch(error => alert(error))
 
     e.preventDefault()
